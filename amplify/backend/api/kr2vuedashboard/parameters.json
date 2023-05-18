@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "kr2vuedashboard",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authkr2vuedashboard6fdd1940",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

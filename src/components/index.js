@@ -9,6 +9,9 @@ import BaseAlert from "./BaseAlert";
 import BaseNav from "./BaseNav";
 import Modal from "./Modal";
 import CloseButton from "./CloseButton";
+//  追加
+import TranslateText from "./TranslateText.vue";
+import IdentifyLabels from "./IdentifyLabels.vue";
 
 import Card from "./Cards/Card.vue";
 import StatsCard from "./Cards/StatsCard.vue";
@@ -28,5 +31,7 @@ export {
   BaseButton,
   BaseAlert,
   SidebarPlugin,
+  TranslateText,
+  IdentifyLabels,
   BaseNav
 };

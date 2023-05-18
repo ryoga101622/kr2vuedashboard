@@ -1,0 +1,13 @@
+{
+    "resourceName": "identifyText05a3faab",
+    "identifyPolicyName": "identifyPolicy05a3faab",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "adminAuthProtected": "DISALLOW",
+    "adminGuestProtected": "DISALLOW",
+    "identifyType": "identifyText"
+}

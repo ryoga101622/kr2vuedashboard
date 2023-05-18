@@ -10,6 +10,14 @@
       "StackName": "amplify-kr2vuedashboard-dev-105501",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:047403811176:stack/amplify-kr2vuedashboard-dev-105501/d66fc4c0-f455-11ed-83cd-0a629cdd37c9",
       "AmplifyAppId": "dn14l7i8zhkni"
+    },
+    "categories": {
+      "auth": {
+        "kr2vuedashboard6fdd1940": {}
+      },
+      "predictions": {
+        "translateText4c42e6f1": {}
+      }
     }
   }
 }

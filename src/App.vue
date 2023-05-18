@@ -2,7 +2,10 @@
   <div>
     <notifications></notifications>
     <router-view :key="$route.fullPath"></router-view>
-  </div>
+    <ul class="list">
+          <li><router-link class="routerLink" to="AI">AI</router-link></li>
+    </ul>
+</div>  
 </template>
 
 <script>

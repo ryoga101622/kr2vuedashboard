@@ -1,1 +1,83 @@
-{}
+{
+  "api": {
+    "kr2vuedashboard": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "kr2vuedashboard6fdd1940"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authkr2vuedashboard6fdd1940"
+            }
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "kr2vuedashboard6fdd1940": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "predictions": {
+    "identifyLabels9862453e": {
+      "dependsOn": [],
+      "identifyType": "identifyLabels",
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition"
+    },
+    "identifyText05a3faab": {
+      "dependsOn": [],
+      "identifyType": "identifyText",
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition"
+    },
+    "interpretText40267c23": {
+      "interpretType": "interpretText",
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend"
+    },
+    "speechGenerator9e9fa890": {
+      "convertType": "speechGenerator",
+      "providerPlugin": "awscloudformation",
+      "service": "Polly"
+    },
+    "translateText4c42e6f1": {
+      "convertType": "translateText",
+      "providerPlugin": "awscloudformation",
+      "service": "Translate"
+    }
+  }
+}

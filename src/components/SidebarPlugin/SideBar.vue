@@ -50,7 +50,7 @@
       },
       backgroundColor: {
         type: String,
-        default: "vue"
+        default: "blue"
       },
       activeColor: {
         type: String,
